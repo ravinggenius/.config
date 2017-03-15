@@ -1,0 +1,8 @@
+.netrwhist
+bundles/.cache
+bundles/cache_vi
+bundles/cache_vim
+bundles/repos
+!bundles/repos/github.com/Shougo/dein.vim
+bundles/state_vi.vim
+bundles/state_vim.vim

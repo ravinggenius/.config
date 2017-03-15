@@ -1,0 +1,54 @@
+[alias]
+	a = add
+	aa = add --all
+	alias = !git config --list | grep alias | cut -c 7-
+	amend = commit --amend -C HEAD
+	br = branch
+	c = commit
+	ci = commit -m
+	cia = commit -am
+	co = checkout
+	di = diff
+	dins = diff --name-status
+	dt = difftool
+	la = log --branches --date=short --graph --all --pretty=format:'%Cred%h%Creset %Cblue%ad%Creset %C(yellow)%aN%Creset %s%C(bold green)%d%Creset'
+	l = !git la -10
+	rup = remote update --prune
+	st = status
+	undo = reset --soft HEAD^
+	who = shortlog --numbered --summary --
+
+[color]
+	branch = true
+	diff = true
+	interactive = true
+	pager = true
+	status = true
+	ui = true
+
+[commit]
+	template = /Users/thomas/.stCommitMsg
+
+[core]
+	excludesfile = /Users/thomas/.gitignore_global
+
+[diff]
+	; tool = opendiff
+	; tool = sourcetree
+	tool = vimdiff
+
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+
+[push]
+	default = simple
+
+[user]
+	name = Thomas Ingram
+	email = ithomas@netapp.com
+	editor = vim
