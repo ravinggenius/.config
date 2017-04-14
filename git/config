@@ -33,9 +33,10 @@
 	excludesfile = /Users/thomas/.gitignore_global
 
 [diff]
+	tool = diffmerge
 	; tool = opendiff
 	; tool = sourcetree
-	tool = vimdiff
+	; tool = vimdiff
 
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
