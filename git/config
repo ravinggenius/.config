@@ -52,6 +52,11 @@
 	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
 
+[rebase]
+	autoSquash = true
+	missingCommitsCheck = warn
+	stat = true
+
 [push]
 	default = simple
 
