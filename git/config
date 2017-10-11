@@ -13,6 +13,7 @@
 	dt = difftool
 	la = log --branches --date=short --graph --all --pretty=format:'%Cred%h%Creset %Cblue%ad%Creset %C(yellow)%aN%Creset %s%C(bold green)%d%Creset'
 	l = !git la -10
+	praise = blame
 	rup = remote update --prune
 	st = status
 	undo = reset --soft HEAD^
