@@ -41,6 +41,9 @@
 	; tool = sourcetree
 	; tool = vimdiff
 
+[difftool]
+	prompt = false
+
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path = 
