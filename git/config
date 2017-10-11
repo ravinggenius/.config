@@ -2,11 +2,11 @@
 	a = add
 	aa = add --all
 	alias = !git config --list | grep alias | cut -c 7-
-	amend = commit --amend -C HEAD
+	amend = commit --amend --reuse-message HEAD
 	br = branch
 	c = commit
-	ci = commit -m
-	cia = commit -am
+	ci = commit --message
+	cia = commit --all --message
 	co = checkout
 	di = diff
 	dins = diff --name-status
