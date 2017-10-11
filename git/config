@@ -18,6 +18,9 @@
 	undo = reset --soft HEAD^
 	who = shortlog --numbered --summary --
 
+[apply]
+	whitespace = warn
+
 [color]
 	branch = true
 	diff = true
