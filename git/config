@@ -27,10 +27,10 @@
 	ui = true
 
 [commit]
-	template = /Users/thomas/.stCommitMsg
+	template = ~/.config/git/stCommitMsg
 
 [core]
-	excludesfile = /Users/thomas/.gitignore_global
+	excludesfile = ~/.config/git/ignore_global
 
 [diff]
 	tool = diffmerge
