@@ -50,6 +50,6 @@
 	default = simple
 
 [user]
-	name = Thomas Ingram
+	editor = nvim
 	email = ithomas@netapp.com
-	editor = vim
+	name = Thomas Ingram
