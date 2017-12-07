@@ -37,7 +37,8 @@
 	excludesfile = ~/.config/git/ignore_global
 
 [diff]
-	tool = diffmerge
+	tool = bcomp
+	; tool = diffmerge
 	; tool = opendiff
 	; tool = sourcetree
 	; tool = vimdiff
@@ -45,8 +46,22 @@
 [difftool]
 	prompt = false
 
+[difftool "bcomp"]
+	cmd = "/usr/local/bin/bcomp" "$LOCAL" "$REMOTE"
+	trustExitCode = true
+
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+
+[merge]
+	tool = bcomp
+
+[mergetool]
+	prompt = false
+
+[mergetool "bcomp"]
+	cmd = "/usr/local/bin/bcomp" "$LOCAL" "$REMOTE" "$BASE" "$MERGED"
+	trustExitCode = true
 
 [mergetool "sourcetree"]
 	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
