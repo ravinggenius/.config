@@ -11,6 +11,7 @@
 	di = diff
 	dins = diff --name-status
 	dt = difftool
+	dtd = difftool --dir-diff
 	la = log --branches --date=short --graph --all --pretty=format:'%Cred%h%Creset %Cblue%ad%Creset %C(yellow)%aN%Creset %s%C(bold green)%d%Creset' --topo-order
 	l = !git la -10
 	praise = blame
