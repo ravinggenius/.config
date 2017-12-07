@@ -35,6 +35,7 @@
 	template = ~/.config/git/stCommitMsg
 
 [core]
+	editor = nvim
 	excludesfile = ~/.config/git/ignore_global
 
 [diff]
@@ -77,6 +78,5 @@
 	default = simple
 
 [user]
-	editor = nvim
 	email = ithomas@netapp.com
 	name = Thomas Ingram
