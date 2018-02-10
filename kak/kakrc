@@ -1,0 +1,9 @@
+# Respect .editorconfig
+hook global BufCreate .* %{editorconfig-load}
+
+# Perfect line numbers!!!
+hook global WinCreate .* %{add-highlighter number_lines -relative}
+
+# Finders from the GitHub wiki, but they don't seem to work (complains about `args`)
+define-command find     -params 1 -shell-candidates %{ find -type f } %{ edit %args{1} }
+define-command git-edit -params 1 -shell-candidates %{ git ls-files } %{ edit %args{1} }
