@@ -44,6 +44,10 @@ if dein#load_state('~/.config/nvim/vendor')
     " Align text
     call dein#add('godlygeek/tabular')
 
+    " Toggle comments with <leader><leader><leader>. Works on current line
+    " or a selection
+    call dein#add('tpope/vim-commentary')
+
     " Add/edit/delete surrounding matching pairs
     call dein#add('tpope/vim-surround')
 
@@ -113,9 +117,21 @@ if dein#load_state('~/.config/nvim/vendor')
     call dein#add('RRethy/vim-illuminate')
   " }}}
 
+  " HASKELL
+  " {{{
+    call dein#add('neovimhaskell/haskell-vim')
+  " }}}
+
+  " IDRESS
+  " {{{
+    call dein#add('idris-hackers/idris-vim')
+  " }}}
+
   " SQL
   " {{{
     call dein#add('tpope/vim-db')
+    call dein#add('tpope/vim-dispatch')
+    call dein#add('tpope/vim-dotenv')
   " }}}
 
   " CSS, SCSS
@@ -124,6 +140,11 @@ if dein#load_state('~/.config/nvim/vendor')
 
     call dein#add('miripiruni/CSScomb-for-Vim')
     autocmd BufWritePre,FileWritePre *.css,*.less,*.sass,*.scss silent! :CSScomb
+  " }}}
+
+  " SHELL
+  " {{{
+    call dein#add('Shougo/deol.nvim')
   " }}}
 
   call dein#end()
