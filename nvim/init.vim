@@ -16,12 +16,6 @@ if dein#load_state('~/.config/nvim/vendor')
     " (press `ga`)
     call dein#add('tpope/vim-characterize')
 
-    " Git integration
-    call dein#add('tpope/vim-fugitive')
-
-    " Git status per line
-    call dein#add('airblade/vim-gitgutter')
-
     " Allow repeat (`.`) to work with vim-surround
     call dein#add('tpope/vim-repeat')
 
@@ -52,6 +46,15 @@ if dein#load_state('~/.config/nvim/vendor')
       set undodir=~/.config/nvim/undo/
       set undofile
     endif
+  " }}}
+
+  " GIT
+  " {{{
+    call dein#add('airblade/vim-gitgutter')
+
+    call dein#add('jreybert/vimagit')
+
+    call dein#add('tpope/vim-fugitive')
   " }}}
 
   " LINE DECORATIONS
