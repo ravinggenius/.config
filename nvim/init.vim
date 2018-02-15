@@ -21,6 +21,10 @@ if dein#load_state('~/.config/nvim/vendor')
 
     " Allow repeat (`.`) to work with vim-surround
     call dein#add('tpope/vim-repeat')
+
+    " Statusline
+    call dein#add('vim-airline/vim-airline')
+    set noshowmode
   " }}}
 
   " EDITING
