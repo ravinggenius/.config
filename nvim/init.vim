@@ -42,6 +42,13 @@ if dein#load_state('~/.config/nvim/vendor')
 
     " Add/edit/delete surrounding matching pairs
     call dein#add('tpope/vim-surround')
+
+    call dein#add('mbbill/undotree')
+    nnoremap <F5> :UndotreeToggle<CR>
+    if has("persistent_undo")
+      set undodir=~/.config/nvim/undo/
+      set undofile
+    endif
   " }}}
 
   " LINE DECORATIONS
