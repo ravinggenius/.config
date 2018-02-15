@@ -22,6 +22,10 @@ if dein#load_state('~/.config/nvim/vendor')
     " Statusline
     call dein#add('vim-airline/vim-airline')
     set noshowmode
+
+    " Open splits where expected
+    set splitbelow
+    set splitright
   " }}}
 
   " EDITING
