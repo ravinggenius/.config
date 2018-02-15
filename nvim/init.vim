@@ -66,6 +66,26 @@ if dein#load_state('~/.config/nvim/vendor')
     let g:ctrlp_working_path_mode = 2
   " }}}
 
+  " SEARCHING
+  " {{{
+    " Incremental search with ignore case (except explicit caps)
+    set incsearch
+    set ignorecase
+    set smartcase
+    set showmatch
+    set hlsearch
+
+    " Clear search highlighting
+    nnoremap <leader><space> :noh<cr>
+
+    " Search highlighting
+    set hls
+
+    " Center search results while browsing
+    map N Nzz
+    map n nzz
+  " }}}
+
   call dein#end()
   call dein#save_state()
 endif
