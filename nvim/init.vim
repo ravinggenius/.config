@@ -19,6 +19,9 @@ if dein#load_state('~/.config/nvim/vendor')
     " Git integration
     call dein#add('tpope/vim-fugitive')
 
+    " Git status per line
+    call dein#add('airblade/vim-gitgutter')
+
     " Allow repeat (`.`) to work with vim-surround
     call dein#add('tpope/vim-repeat')
 
