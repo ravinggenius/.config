@@ -86,6 +86,14 @@ if dein#load_state('~/.config/nvim/vendor')
     map n nzz
   " }}}
 
+  " CSS, SCSS
+  " {{{
+    call dein#add('ap/vim-css-color')
+
+    call dein#add('miripiruni/CSScomb-for-Vim')
+    autocmd BufWritePre,FileWritePre *.css,*.less,*.sass,*.scss silent! :CSScomb
+  " }}}
+
   call dein#end()
   call dein#save_state()
 endif
