@@ -110,6 +110,11 @@ if dein#load_state('~/.config/nvim/vendor')
     map n nzz
   " }}}
 
+  " SQL
+  " {{{
+    call dein#add('tpope/vim-db')
+  " }}}
+
   " CSS, SCSS
   " {{{
     call dein#add('ap/vim-css-color')
