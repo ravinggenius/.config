@@ -12,6 +12,9 @@ if dein#load_state('~/.config/nvim/vendor')
 
   " GENERAL
   " {{{
+    " Awesome mouse support in the terminal
+    set mouse=a
+
     " Extended character information for character under the cursor
     " (press `ga`)
     call dein#add('tpope/vim-characterize')
