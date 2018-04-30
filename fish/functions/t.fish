@@ -1,3 +1,3 @@
 function t --wraps=exa
-	exa --git --git-ignore --ignore-glob .git --tree $argv
+	exa --classify --git --git-ignore --group-directories-first --ignore-glob .git --tree $argv
 end

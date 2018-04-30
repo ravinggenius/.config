@@ -1,3 +1,3 @@
 function l --wraps=exa
-	exa --git --long $argv
+	exa --classify --git --group-directories-first --long $argv
 end
