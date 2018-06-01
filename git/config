@@ -18,7 +18,7 @@
 	rup = remote update --prune
 	st = status
 	undo = reset --soft HEAD^
-	who = shortlog --numbered --summary
+	who = shortlog --email --numbered --summary
 
 [apply]
 	whitespace = warn
