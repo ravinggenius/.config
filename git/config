@@ -76,7 +76,3 @@
 
 [push]
 	default = simple
-
-[user]
-	email = ithomas@netapp.com
-	name = Thomas Ingram
