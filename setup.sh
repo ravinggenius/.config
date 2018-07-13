@@ -7,19 +7,36 @@ echo "Improving shell..."
 brew install fish
 
 echo "Installing common utilities..."
-brew install exa fzf httpie jq jsonpp ripgrep
+brew install \
+	exa \
+	fzf \
+	httpie \
+	jq \
+	jsonpp \
+	ripgrep
 
 echo "Installing recent git..."
-brew install git tig
+brew install \
+	git \
+	tig
 
 echo "Installing editors..."
-brew install kakoune neovim
+brew install \
+	kakoune \
+	neovim
 
 echo "Installing languages..."
-brew install node rbenv ruby-build
+brew install \
+	crystal \
+	node \
+	rbenv \
+	ruby-build
 
 echo "Installing video downloaders..."
-brew install vimeo-downloader you-get youtube-dl
+brew install \
+	vimeo-downloader \
+	you-get \
+	youtube-dl
 
 echo "Setting persistent variables..."
 read -p 'git configuration name: ' git_name
