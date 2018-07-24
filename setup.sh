@@ -8,22 +8,41 @@ brew install fish
 
 echo "Installing common utilities..."
 brew install \
+	ccat \
 	exa \
 	fzf \
 	httpie \
 	jq \
 	jsonpp \
-	ripgrep
+	ripgrep \
+	um
+brew cask install \
+	chalk \
+	dash \
+	dropbox \
+	flycut \
+	keybase \
+	moom
 
 echo "Installing recent git..."
 brew install \
 	git \
 	tig
+brew cask install \
+	diffmerge \
+	gitup \
+	rowanj-gitx \
+	xit
 
 echo "Installing editors..."
 brew install \
 	kakoune \
 	neovim
+brew cask install \
+	atom \
+	oni \
+	sublime-text \
+	visual-studio-code
 
 echo "Installing languages..."
 brew install \
@@ -32,11 +51,41 @@ brew install \
 	rbenv \
 	ruby-build
 
-echo "Installing video downloaders..."
+echo "Installing media managers..."
 brew install \
 	vimeo-downloader \
 	you-get \
 	youtube-dl
+brew cask install spotify
+
+echo "Installing database tools..."
+brew cask install \
+	postgres \
+	postico \
+	valentina-studio
+
+echo "Installing chat apps..."
+brew cask install \
+	discord \
+	slack
+
+echo "Installing better terminal emulators..."
+brew cask install \
+	hyper \
+	iterm2
+
+echo "Installing browsers..."
+brew cask install \
+	firefox \
+	google-chrome
+
+echo "Installing virtual machines..."
+brew install docker
+brew cask install \
+	docker \
+	vagrant \
+	virtualbox \
+	virtualbox-extension-pack
 
 echo "Setting persistent variables..."
 read -p 'git configuration name: ' git_name
