@@ -47,9 +47,10 @@ fish --command "set --export --universal GIT_COMMITTER_NAME  '${git_name}'"
 fish --command "set --export --universal GIT_AUTHOR_EMAIL    '${git_email}'"
 fish --command "set --export --universal GIT_COMMITTER_EMAIL '${git_email}'"
 
-echo "Linking legacy configs..."
-[[ -e ~/.gitconfig ]] && mv ~/.gitconfig ~/.gitconfig_$(date -u +%Y%m%d%H%M%S)
-ln -s ~/.config/git/config ~/.gitconfig
+if [[ -e ~/.gitconfig ]]; then
+	echo "Moving ~/.gitconfig to ~/.config/git/config-$(date -u +%Y%m%d%H%M%S)"
+	mv ~/.gitconfig ~/.config/git/config-$(date -u +%Y%m%d%H%M%S)
+fi
 
 echo "Installing plugin manager for neovim..."
 curl https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh > installer.sh
