@@ -52,6 +52,9 @@ if [[ -e ~/.gitconfig ]]; then
 	mv ~/.gitconfig ~/.config/git/config-$(date -u +%Y%m%d%H%M%S)
 fi
 
+defaults write com.googlecode.iterm2.plist PrefsCustomFolder -string "~/.config/iterm"
+defaults write com.googlecode.iterm2.plist LoadPrefsFromCustomFolder -bool true
+
 echo "Installing plugin manager for neovim..."
 curl https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh > installer.sh
 sh ./installer.sh ~/.config/nvim/vendor
