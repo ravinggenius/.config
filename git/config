@@ -39,8 +39,8 @@
 	excludesfile = ~/.config/git/ignore_global
 
 [diff]
-	tool = bcomp
-	; tool = diffmerge
+	; tool = bcomp
+	tool = diffmerge
 	; tool = opendiff
 	; tool = sourcetree
 	; tool = vimdiff
