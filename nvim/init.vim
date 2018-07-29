@@ -108,6 +108,9 @@ if dein#load_state('~/.config/nvim/vendor')
     " Center search results while browsing
     map N Nzz
     map n nzz
+
+    " Highlight all occurrences of token under cursor
+    call dein#add('RRethy/vim-illuminate')
   " }}}
 
   " SQL
