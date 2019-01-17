@@ -55,6 +55,9 @@
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 
+[interactive-rebase-tool]
+	foregroundColor = black
+
 [merge]
 	tool = bcomp
 
@@ -76,3 +79,6 @@
 	autoSquash = true
 	missingCommitsCheck = warn
 	stat = true
+
+[sequence]
+	editor = interactive-rebase-tool

@@ -27,6 +27,7 @@ brew cask install \
 echo "Installing recent git..."
 brew install \
 	git \
+	interactive-rebase-tool \
 	tig
 brew cask install \
 	diffmerge \
