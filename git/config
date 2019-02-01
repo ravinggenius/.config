@@ -77,7 +77,7 @@
 
 [rebase]
 	autoSquash = true
-	missingCommitsCheck = warn
+	missingCommitsCheck = error
 	stat = true
 
 [sequence]
