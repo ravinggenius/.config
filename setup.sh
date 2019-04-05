@@ -75,6 +75,12 @@ brew cask install \
 	hyper \
 	iterm2
 
+echo "Installing fonts..."
+brew tap caskroom/fonts
+brew cask install \
+	font-fira-code \
+	font-fira-mono
+
 echo "Installing browsers..."
 brew cask install \
 	firefox \
